@@ -19,9 +19,9 @@
 
     <!-- android -->
     <platform name="android">
-        
+        <!--
         <dependency id="android.support.v4" url="https://github.com/roberthovhannisyan/cordova-plugin-android-support-v4" />
-        
+        -->
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="MFileChooser" >
                 <param name="android-package" value="am.armsoft.plugins.MFileChooser"/>
@@ -46,7 +46,7 @@
         <config-file target="AndroidManifest.xml" parent="/manifest/application">
            <activity
                android:name="com.orleonsoft.android.simplefilechooser.ui.FileChooserActivity"
-               android:screenOrientation="portrait"
+               android:screenOrientation="landscape"
                android:exported="true"
                android:label="@string/app_name">
            </activity>
